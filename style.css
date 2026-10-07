@@ -1,0 +1,206 @@
+/* Common font and text colour are inherited by all elements */
+body {
+    font-family: Arial, sans-serif;
+    color: #3e2723;
+    margin: 0;
+    background-color: #fff8f0;
+}
+
+/* Element selector */
+header {
+    background-color: #6f4e37;
+    padding: 20px;
+}
+
+/* Flexbox: logo left, navigation right */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Navigation */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main sections */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #6f4e37;
+}
+
+/* Images must not overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS Grid: 3 columns on laptop */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Box model */
+.menu-card {
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid #8d6e63;
+    border-radius: 12px;
+    background-color: #f5e6d3;
+}
+
+.menu-card h3 {
+    color: #5d4037;
+}
+
+/* Class selector */
+.special-offer {
+    color: green;
+    background-color: #fff3cd;
+    padding: 15px;
+}
+
+/* ID selector */
+#today-offer {
+    color: darkred;
+}
+
+/*
+ID selectors have higher specificity than class selectors.
+Therefore #today-offer wins over .special-offer,
+so the text becomes dark red.
+*/
+
+/* Price table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #8d6e63;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #6f4e37;
+    color: white;
+}
+
+/* Form */
+form {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Aside */
+aside {
+    background-color: #ead7c3;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffd7a8;
+    margin: 0 10px;
+}
+
+/* Tablet: 2 menu columns */
+@media (max-width: 992px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 column and stacked navigation */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        margin-top: 30px;
+    }
+}
