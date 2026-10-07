@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BrewNest Café</title>
+
+    <meta name="description" content="BrewNest Café near CHARUSAT campus">
+    <meta name="author" content="BrewNest Café">
+
+    <link rel="icon" type="image/jpeg" href="brewCafe.jpeg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="brewCafe.jpeg" alt="BrewNest Café logo">
+            <h1>BrewNest Café</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About BrewNest</h2>
+
+            <p>BrewNest Café is a cosy coffee shop located near the CHARUSAT campus.</p>
+            <p>We serve freshly prepared coffee, refreshing cold brews and tasty snacks for students.</p>
+
+            <img src="https://via.placeholder.com/700x300" alt="Interior of BrewNest Café">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+
+            <div class="menu-container">
+
+                <article class="menu-card">
+                    <h3>Hot Coffee</h3>
+                    <ul>
+                        <li>Espresso - ₹80</li>
+                        <li>Cappuccino - ₹120</li>
+                        <li>Latte - ₹130</li>
+                    </ul>
+                </article>
+
+                <article class="menu-card">
+                    <h3>Cold Brews</h3>
+                    <ul>
+                        <li>Classic Cold Brew - ₹110</li>
+                        <li>Iced Latte - ₹140</li>
+                        <li>Mocha Frappe - ₹150</li>
+                    </ul>
+                </article>
+
+                <article class="menu-card">
+                    <h3>Snacks</h3>
+                    <ul>
+                        <li>Veg Sandwich - ₹90</li>
+                        <li>Cheese Toast - ₹80</li>
+                        <li>Chocolate Muffin - ₹70</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="price-table">
+            <h2>Price Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Small</td>
+                        <td>₹80</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Medium</td>
+                        <td>₹120</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Brew</td>
+                        <td>Medium</td>
+                        <td>₹110</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Large</td>
+                        <td>₹130</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="specials">
+            <h2>Today's Specials</h2>
+
+            <p class="special-offer" id="today-offer">
+                Buy one cold brew and get a snack at 20% off!
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Table Booking</h2>
+
+            <address>
+                BrewNest Café<br>
+                Near CHARUSAT Campus<br>
+                Changa, Gujarat<br>
+                India
+            </address>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+                <button type="submit">Book a Table</button>
+            </form>
+        </section>
+
+        <aside>
+            <h2>Opening Hours</h2>
+            <p>Monday - Saturday: 8:00 AM - 9:00 PM</p>
+            <p>Sunday: 9:00 AM - 6:00 PM</p>
+
+            <h3>Student Offer</h3>
+            <p>Show your student ID and get 10% off on selected drinks.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BrewNest Café. All rights reserved.</p>
+
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </footer>
+
+</body>
+</html>
